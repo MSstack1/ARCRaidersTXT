@@ -1,0 +1,91 @@
+{
+  "A1": {
+    "decode": "KEY-21-X",
+    "puzzles": [
+      {
+        "prompt": "Incoming Raider in maintenance shaft A1.\nSignal packet corrupted.\nCipher: 3-1-4-1\nDecode Sheet: KEY-21-X\nEnter unlock code:",
+        "answer": "5312"
+      },
+      {
+        "prompt": "Raider trapped behind a pressurized hatch.\nInput panel displays blinking pattern: RED RED BLUE RED BLUE BLUE.\nDecode Sheet: KEY-21-X -> RED=1, BLUE=7\nEnter the 6-digit sequence:",
+        "answer": "117177"
+      },
+      {
+        "prompt": "Distress ping from motionless Raider.\nAutomated message: 'ROTATE-LEFT 2 → ABF'.\nDecode Sheet: KEY-21-X (Caesar shift left by 2)\nApply shift to decode:",
+        "answer": "YZD"
+      }
+    ]
+  },
+
+  "B3": {
+    "decode": "SIGMA-4",
+    "puzzles": [
+      {
+        "prompt": "Raider reporting hostile ARC interference.\nSignal contains embedded checksum.\nEquation on panel: (sector_id letters → positions) sum mod 9.\nB(2) + C(?) + 3(?) + SIGMA-4 key offset = ???\nUsing SIGMA-4 offset = 4, compute:\n2 + 3 + 4 + 4 = ?:",
+        "answer": "4"
+      },
+      {
+        "prompt": "Hatch B3-17 manual code required.\nEncoded string: 'KSRR'\nDecode Sheet: SIGMA-4 = shift right by 4.\nApply shift to get the original letters:",
+        "answer": "GONN"
+      },
+      {
+        "prompt": "Raider found a locked container.\nMarkings read: TRIANGLE = 3, SQUARE = 4, CIRCLE = 2.\nPattern: TRIANGLE SQUARE CIRCLE TRIANGLE TRIANGLE.\nReturn numeric sequence:",
+        "answer": "34233"
+      }
+    ]
+  },
+
+  "C2": {
+    "decode": "C-LINE",
+    "puzzles": [
+      {
+        "prompt": "Emergency conduit restart required.\nFrequency burst: 12, 15, 18, ?\nDecode Sheet C-LINE: increments of +3.\nNext value:",
+        "answer": "21"
+      },
+      {
+        "prompt": "Raider stuck in ventilation crawlspace.\nPanel shows: ⟨↑ ↑ → ↓ → ↑⟩\nDecode Sheet C-LINE maps arrows to digits:\nUP=2, DOWN=5, LEFT=8, RIGHT=6\nEnter converted sequence:",
+        "answer": "226652"
+      },
+      {
+        "prompt": "C2 hatch 9 uses a keyword scramble.\nScramble: 'RDAE'\nDecode Sheet C-LINE says: order alphabetically → unscramble.\nEnter the correct word:",
+        "answer": "READ"
+      }
+    ]
+  },
+
+  "D0": {
+    "decode": "PRIME-13",
+    "puzzles": [
+      {
+        "prompt": "System requires prime-sequence authentication.\nSequence: 2, 3, 5, 7, 11, ?\nEnter next prime:",
+        "answer": "13"
+      },
+      {
+        "prompt": "Raider requests code reversal.\nString: '31779'\nDecode Sheet PRIME-13: reverse string + subtract 2 from each digit.\nCompute:",
+        "answer": "75591"
+      },
+      {
+        "prompt": "Storage bay hatch stuck. Control panel shows letters:\nM P U B\nDecode Sheet PRIME-13 = shift left by 13.\nApply ROT13:",
+        "answer": "ZCHO"
+      }
+    ]
+  },
+
+  "E4": {
+    "decode": "FALLBACK",
+    "puzzles": [
+      {
+        "prompt": "E4 relay offline. Manual route required.\nPath markers: ALPHA → DELTA → CHARLIE → FOXTROT\nDecode FALLBACK: A=1, B=2 ... Z=26, sum values.\nCompute: ALPHA(1) + DELTA(4) + CHARLIE(3) + FOXTROT(6):",
+        "answer": "14"
+      },
+      {
+        "prompt": "Encrypted Raider message:\n'FALLBACK CODE: 6-1-12-12'\nConvert using A1Z26:",
+        "answer": "FALL"
+      },
+      {
+        "prompt": "E4 pressure door: pattern puzzle.\nPanel shows 1, 1, 2, 3, 5, ?\nDecode FALLBACK: Fibonacci.\nNext number:",
+        "answer": "8"
+      }
+    ]
+  }
+}

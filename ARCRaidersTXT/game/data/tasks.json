@@ -1,0 +1,41 @@
+{
+  "rescue_basic": {
+    "name": "Basic Raider Extraction",
+    "steps": [
+      {
+        "type": "puzzle",
+        "sector": "A1",
+        "description": "Decode the hatch override cipher."
+      },
+      {
+        "type": "puzzle",
+        "sector": "C2",
+        "description": "Re-route power and translate arrow patterns."
+      },
+      {
+        "type": "confirmation",
+        "description": "Confirm Raider extraction by typing 'confirm'."
+      }
+    ]
+  },
+
+  "signal_repair": {
+    "name": "Signal Relay Repair",
+    "steps": [
+      {
+        "type": "puzzle",
+        "sector": "E4",
+        "description": "Perform manual route calculation."
+      },
+      {
+        "type": "puzzle",
+        "sector": "B3",
+        "description": "Decode corrupted transmission checksum."
+      },
+      {
+        "type": "status_check",
+        "description": "Report power levels to ARC Central."
+      }
+    ]
+  }
+}
